@@ -16,12 +16,21 @@ class ViewController: UIViewController {
             return
         }
         
+        let x_s : String = "" + sender.accessibilityLabel!.suffix(1)
+        print(x_s)
+        let y_s : String = "" + sender.accessibilityLabel!.prefix(1)
+        print(y_s)
+        
+        let x = Int(x_s)
+        let y = Int(y_s)
+        
+        
         if(playerTurn == 1) {
                 sender.setTitle("X", for: .normal)
         } else {
             sender.setTitle("O", for: .normal)
         }
-        processPressedButton()
+        processPressedButton(xPosition: x, yPosition: y)
     }
     
     var playerTurn : Int = 1
@@ -32,7 +41,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    func processPressedButton() {
+    func processPressedButton(xPosition : Int?, yPosition : Int?) {
         print("It was player \(playerTurn).")
         if(playerTurn == 1) {
             playerTurn = 2
