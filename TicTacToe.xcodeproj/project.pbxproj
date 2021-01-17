@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00044EE125B4A3FA00AEEE8E /* TicTacToeBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00044EE025B4A3FA00AEEE8E /* TicTacToeBoard.swift */; };
 		00F3C05825AB968F00B8F4D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3C05725AB968F00B8F4D0 /* AppDelegate.swift */; };
 		00F3C05A25AB968F00B8F4D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3C05925AB968F00B8F4D0 /* SceneDelegate.swift */; };
 		00F3C05C25AB968F00B8F4D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3C05B25AB968F00B8F4D0 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00044EE025B4A3FA00AEEE8E /* TicTacToeBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeBoard.swift; sourceTree = "<group>"; };
 		00F3C05425AB968F00B8F4D0 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F3C05725AB968F00B8F4D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00F3C05925AB968F00B8F4D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				00F3C06025AB969500B8F4D0 /* Assets.xcassets */,
 				00F3C06225AB969500B8F4D0 /* LaunchScreen.storyboard */,
 				00F3C06525AB969500B8F4D0 /* Info.plist */,
+				00044EE025B4A3FA00AEEE8E /* TicTacToeBoard.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				00F3C05C25AB968F00B8F4D0 /* ViewController.swift in Sources */,
 				00F3C05825AB968F00B8F4D0 /* AppDelegate.swift in Sources */,
 				00F3C05A25AB968F00B8F4D0 /* SceneDelegate.swift in Sources */,
+				00044EE125B4A3FA00AEEE8E /* TicTacToeBoard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

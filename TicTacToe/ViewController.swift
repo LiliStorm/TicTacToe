@@ -9,17 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let board : TicTacToeBoard = TicTacToeBoard()
+    
     @IBAction func boardButtonPressed(_ sender: UIButton) {
-        // print(sender.currentTitle!)
-        print(sender.accessibilityLabel!)
         if (sender.currentTitle != nil) {
             return
         }
         
         let x_s : String = "" + sender.accessibilityLabel!.suffix(1)
-        print(x_s)
         let y_s : String = "" + sender.accessibilityLabel!.prefix(1)
-        print(y_s)
         
         let x = Int(x_s)
         let y = Int(y_s)
@@ -30,7 +28,7 @@ class ViewController: UIViewController {
         } else {
             sender.setTitle("O", for: .normal)
         }
-        processPressedButton(xPosition: x, yPosition: y)
+        processPressedButton(xPosition: x!, yPosition: y!)
     }
     
     var playerTurn : Int = 1
@@ -41,15 +39,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    func processPressedButton(xPosition : Int?, yPosition : Int?) {
-        print("It was player \(playerTurn).")
+    func processPressedButton(xPosition : Int, yPosition : Int) {
+        board.setOwner(x: xPosition, y: yPosition, newOwner: playerTurn)
+        
+        print(board.checkForWinner())
+        
         if(playerTurn == 1) {
             playerTurn = 2
         } else {
             playerTurn = 1
         }
-        
-        print("It is now player \(playerTurn).")
     }
 
 }
