@@ -11,7 +11,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var showPlayerTurn: UILabel!
     
-    let board : TicTacToeBoard = TicTacToeBoard()
+    var board : TicTacToeBoard = TicTacToeBoard()
+    var playerTurn : Int = 1
     
     @IBAction func boardButtonPressed(_ sender: UIButton) {
         if (sender.currentTitle != nil) {
@@ -33,9 +34,6 @@ class ViewController: UIViewController {
         processPressedButton(xPosition: x!, yPosition: y!)
     }
     
-    var playerTurn : Int = 1
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,11 +44,11 @@ class ViewController: UIViewController {
         board.setOwner(x: xPosition, y: yPosition, newOwner: playerTurn)
         
         if board.checkForWinner() != 0 {
-            //popup showing winner. restart game?
-        } else {
-        
-            print(board.checkForWinner())
+            // TODO: popup showing winner. restart game?
+
+            resetBoard()
             
+        } else {
             if(playerTurn == 1) {
                 playerTurn = 2
             } else {
@@ -60,11 +58,25 @@ class ViewController: UIViewController {
             showPlayerTurn.text = "Player \(playerTurn)'s turn."
             
             if board.checkIfBoardIsFull() {
-                // game ended with no winner, show restart/back popup?
-                print("Board is full!")
+                
+                // TODO: game ended with no winner, show restart/back popup?
+                
+                resetBoard()
             }
         }
         
+    }
+    
+    func resetBoard() {
+        for subview in self.view.subviews {
+            if subview is UIButton {
+                let button = subview as! UIButton
+                button.setTitle(nil, for: .normal)
+            }
+        }
+        
+        playerTurn = 1
+        board = TicTacToeBoard()
     }
 
 }

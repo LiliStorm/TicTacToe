@@ -43,7 +43,17 @@ class TicTacToeBoard {
             }
         }
         
-        // TO DO check diagonal
+        if board[0][0] == 1 && board[1][1] == 1 && board[2][2] == 1 {
+            winner = 1
+        } else if board[0][0] == 2 && board[1][1] == 2 && board[2][2] == 2 {
+            winner = 2
+        }
+        
+        if board[0][2] == 1 && board[1][1] == 1 && board[2][0] == 1 {
+            winner = 1
+        } else if board[0][2] == 2 && board[1][1] == 2 && board[2][0] == 2 {
+            winner = 2
+        }
         
         return winner
 
