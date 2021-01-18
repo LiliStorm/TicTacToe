@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var showPlayerTurn: UILabel!
+    
     let board : TicTacToeBoard = TicTacToeBoard()
     
     @IBAction func boardButtonPressed(_ sender: UIButton) {
@@ -36,19 +38,33 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        showPlayerTurn.text = "Player 1's turn."
     }
 
     func processPressedButton(xPosition : Int, yPosition : Int) {
         board.setOwner(x: xPosition, y: yPosition, newOwner: playerTurn)
         
-        print(board.checkForWinner())
-        
-        if(playerTurn == 1) {
-            playerTurn = 2
+        if board.checkForWinner() != 0 {
+            //popup showing winner. restart game?
         } else {
-            playerTurn = 1
+        
+            print(board.checkForWinner())
+            
+            if(playerTurn == 1) {
+                playerTurn = 2
+            } else {
+                playerTurn = 1
+            }
+            
+            showPlayerTurn.text = "Player \(playerTurn)'s turn."
+            
+            if board.checkIfBoardIsFull() {
+                // game ended with no winner, show restart/back popup?
+                print("Board is full!")
+            }
         }
+        
     }
 
 }

@@ -48,4 +48,15 @@ class TicTacToeBoard {
         return winner
 
     }
+    
+    func checkIfBoardIsFull () -> Bool {
+        for y in 0...2 {
+            for x in 0...2 {
+                if board[y][x] == 0 {
+                    return false
+                }
+            }
+        }
+        return true
+    }
 }
