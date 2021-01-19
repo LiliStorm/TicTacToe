@@ -45,9 +45,7 @@ class ViewController: UIViewController {
         board.setOwner(x: xPosition, y: yPosition, newOwner: playerTurn)
         
         if board.checkForWinner() != 0 {
-            // TODO: popup showing winner. restart game?
-
-            resetBoard()
+            showAlert(message: "Player \(playerTurn) won!")
             
         } else {
             if(playerTurn == 1) {
@@ -60,9 +58,7 @@ class ViewController: UIViewController {
             
             if board.checkIfBoardIsFull() {
                 
-                // TODO: game ended with no winner, show restart/back popup?
-                
-                resetBoard()
+                showAlert(message: "It was a draw!")
             }
         }
         
@@ -81,6 +77,16 @@ class ViewController: UIViewController {
         
         playerTurn = 1
         board = TicTacToeBoard()
+    }
+    
+    func showAlert(message: String) {
+        let playAgainAlert = UIAlertController(title: "Game over!", message: message, preferredStyle: UIAlertController.Style.alert)
+
+            playAgainAlert.addAction(UIAlertAction(title: "Play again", style: .default, handler: { (action: UIAlertAction!) in
+                self.resetBoard()
+            }))
+
+            self.present(playAgainAlert, animated: true, completion: nil)
     }
 
 }
