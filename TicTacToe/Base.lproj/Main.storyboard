@@ -16,90 +16,123 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paD-79-Do0">
-                                <rect key="frame" x="95" y="206" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                <accessibility key="accessibilityConfiguration" identifier="0:0" label="0:0"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paD-79-Do0">
+                                <rect key="frame" x="61" y="198" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="0:0" label="0:0">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="VkL-SQ-y19"/>
+                                    <constraint firstAttribute="width" constant="100" id="oat-1o-DtK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <connections>
                                     <action selector="boardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dk3-Vo-Pva"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kI-Qn-4cJ">
-                                <rect key="frame" x="200" y="206" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kI-Qn-4cJ">
+                                <rect key="frame" x="157" y="198" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <accessibility key="accessibilityConfiguration" label="0:1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="R8v-CQ-5L2"/>
+                                    <constraint firstAttribute="width" constant="100" id="mXO-s3-7U3"/>
+                                </constraints>
                                 <connections>
                                     <action selector="boardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AZk-NP-C88"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COJ-hU-yTl">
-                                <rect key="frame" x="294" y="206" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COJ-hU-yTl">
+                                <rect key="frame" x="253" y="198" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <accessibility key="accessibilityConfiguration" label="0:2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="8mO-Ak-hni"/>
+                                    <constraint firstAttribute="width" constant="100" id="q32-cQ-Qri"/>
+                                </constraints>
                                 <connections>
                                     <action selector="boardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhD-KZ-FPD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bT-ZP-NIp">
-                                <rect key="frame" x="95" y="280" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bT-ZP-NIp">
+                                <rect key="frame" x="61" y="294" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <accessibility key="accessibilityConfiguration" label="1:0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5KT-ja-MCO"/>
+                                    <constraint firstAttribute="height" constant="100" id="LBa-2l-Keh"/>
+                                </constraints>
                                 <connections>
                                     <action selector="boardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Blb-cL-1IB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRP-t1-Z6F">
-                                <rect key="frame" x="200" y="280" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRP-t1-Z6F">
+                                <rect key="frame" x="157" y="294" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <accessibility key="accessibilityConfiguration" label="1:1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3rc-1n-x0M"/>
+                                    <constraint firstAttribute="height" constant="100" id="tuB-Ry-38A"/>
+                                </constraints>
                                 <connections>
                                     <action selector="boardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KcC-gn-g9V"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYa-l5-GdU">
-                                <rect key="frame" x="298" y="280" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYa-l5-GdU">
+                                <rect key="frame" x="253" y="294" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <accessibility key="accessibilityConfiguration" label="1:2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="EhC-Cd-20s"/>
+                                    <constraint firstAttribute="width" constant="100" id="WoG-OC-Af5"/>
+                                </constraints>
                                 <connections>
                                     <action selector="boardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kjT-fo-ZIH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og2-Tq-lGe">
-                                <rect key="frame" x="97" y="353" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Og2-Tq-lGe">
+                                <rect key="frame" x="61" y="390" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <accessibility key="accessibilityConfiguration" label="2:0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0x8-RL-V2d"/>
+                                    <constraint firstAttribute="width" constant="100" id="sVZ-0E-0qn"/>
+                                </constraints>
                                 <connections>
                                     <action selector="boardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJ5-Jv-apy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q6-yu-nIO">
-                                <rect key="frame" x="200" y="353" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q6-yu-nIO">
+                                <rect key="frame" x="157" y="390" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <accessibility key="accessibilityConfiguration" label="2:1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4Hu-oJ-nen"/>
+                                    <constraint firstAttribute="width" constant="100" id="ZV7-W7-iBU"/>
+                                </constraints>
                                 <connections>
                                     <action selector="boardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9OU-q7-jJ4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgf-S7-qbB">
-                                <rect key="frame" x="298" y="353" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgf-S7-qbB">
+                                <rect key="frame" x="253" y="390" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <accessibility key="accessibilityConfiguration" label="2:2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Dp3-Ml-x6f"/>
+                                    <constraint firstAttribute="width" constant="100" id="Lem-6q-Cmd"/>
+                                </constraints>
                                 <connections>
                                     <action selector="boardButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qkr-d2-cCH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjO-5x-6Iu">
-                                <rect key="frame" x="173" y="506" width="161" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjO-5x-6Iu">
+                                <rect key="frame" x="137" y="523" width="140" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="gzs-ej-fd1"/>
+                                    <constraint firstAttribute="height" constant="50" id="vnJ-Th-8u3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -107,6 +140,28 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Og2-Tq-lGe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-96" id="02q-9K-jfb"/>
+                            <constraint firstItem="Og2-Tq-lGe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-8" id="0Sz-sX-lc4"/>
+                            <constraint firstItem="COJ-hU-yTl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="5OD-03-CIB"/>
+                            <constraint firstItem="paD-79-Do0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="DMW-zf-5VK"/>
+                            <constraint firstItem="0kI-Qn-4cJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="KWb-Dl-XJc"/>
+                            <constraint firstItem="bRP-t1-Z6F" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-104" id="MMZ-BI-8RC"/>
+                            <constraint firstItem="bRP-t1-Z6F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NiI-gc-VXb"/>
+                            <constraint firstItem="2Q6-yu-nIO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PCQ-tb-Awd"/>
+                            <constraint firstItem="AjO-5x-6Iu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R9r-SI-VPg"/>
+                            <constraint firstItem="Hgf-S7-qbB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="96" id="Rdf-tg-EzY"/>
+                            <constraint firstItem="4bT-ZP-NIp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-96" id="l5z-hO-Haf"/>
+                            <constraint firstItem="lYa-l5-GdU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-104" id="mDf-NI-4lX"/>
+                            <constraint firstItem="AjO-5x-6Iu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="mDf-YJ-QAN"/>
+                            <constraint firstItem="2Q6-yu-nIO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-8" id="na0-Cv-VIG"/>
+                            <constraint firstItem="lYa-l5-GdU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="96" id="nkn-7T-lUf"/>
+                            <constraint firstItem="4bT-ZP-NIp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-104" id="qBY-Nc-MWb"/>
+                            <constraint firstItem="0kI-Qn-4cJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qZ9-0t-TIn"/>
+                            <constraint firstItem="COJ-hU-yTl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="96" id="rae-EK-eMk"/>
+                            <constraint firstItem="paD-79-Do0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-96" id="tmp-6s-OA5"/>
+                            <constraint firstItem="Hgf-S7-qbB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-8" id="yzj-Zf-JLJ"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="showPlayerTurn" destination="AjO-5x-6Iu" id="Qvp-4Z-QRf"/>
@@ -118,11 +173,14 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

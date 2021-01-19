@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        resetBoard()
         showPlayerTurn.text = "Player 1's turn."
     }
 
@@ -72,6 +73,9 @@ class ViewController: UIViewController {
             if subview is UIButton {
                 let button = subview as! UIButton
                 button.setTitle(nil, for: .normal)
+                button.layer.borderWidth = 2
+                button.layer.borderColor = UIColor.black.cgColor
+                button.layer.backgroundColor = UIColor.white.cgColor
             }
         }
         
